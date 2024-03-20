@@ -18,3 +18,31 @@ Console.WriteLine(string.Join(", ", artists));
 string[] crypto = {"Pepe","Coq Inu","Kusama","Polkadot","Ethereum"};
 Console.WriteLine(string.Join(", ", crypto));
 
+
+string[] superCars = new string[4];
+superCars = new string[]{"McLaren P1, Buggati Veyron, Lamborghini Aventador, Ferrari F1"};
+Console.WriteLine("My favourite super cars are " + string.Join(", ", superCars));
+*/
+
+// First way to create arrays - Add values later
+int[] numbers = new int[5];
+numbers = new int[] {1,2,3,4,5};
+Console.WriteLine(string.Join(", ", numbers));
+
+// Second way to create arrays - Adding values right away
+string[] artists = new string[3] {"The Weeknd", "Micheal Jackson", "Tupac"};
+Console.WriteLine(string.Join(", ", artists));
+
+// Third way to create arrays - Without new keyword
+string[] crypto = {"Pepe","Coq Inu","Kusama","Polkadot","Ethereum"};
+Console.WriteLine(string.Join(", ", crypto));
+
+string[] politicians = {"Donald Trump","Vladimir Putin", "George W Bush"};
+Console.WriteLine(string.Join(", ", politicians));
+
+double[] CONSTANTS = new double[] {1.61,2.72,3.14};
+Console.WriteLine(string.Join(", ", CONSTANTS));
+
+string[] familyMembers;
+familyMembers = new string[] {"Sijan","Gehendra","Jeff","Laxmi"};
+Console.WriteLine(string.Join(", ", familyMembers));

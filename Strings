@@ -1,0 +1,29 @@
+string[] wallet = new string[] {"Coq Inu","Ethereum","Pepe","Kusama"};
+string walletOwner = "Sijan Acharya";
+Console.Write($"{walletOwner} has the following coins: {string.Join(", ",wallet)}");
+
+// Length is a property of a string which returns number of characters in that string
+string game = "Call Of Duty";
+Console.WriteLine($"{game} has {game.Length} letters in the word");
+
+string accountOwner = "Sijan Acharya";
+string bank = "St.George";
+double bankBalance = 5.10;
+Console.Write($"{accountOwner} has ${bankBalance} in their {bank} account");
+
+
+// Square brackets are used to help visualize the spaces in Trim method
+string name = "        Minecraft       ";
+string trimmedNameFront = name.TrimStart();
+
+Console.WriteLine($"[{trimmedNameFront}]"); // [Minecraft       ]
+
+string sport = "        Boxing      ";
+string trimmedNameBack = sport.TrimEnd();
+
+Console.WriteLine($"[{trimmedNameBack}]"); // [        Boxing]
+
+string company = "      Blackrock       ";
+string companyTrimmed = company.Trim();
+
+Console.WriteLine($"[{companyTrimmed}]"); // [Blackrock]

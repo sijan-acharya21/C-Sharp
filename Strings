@@ -40,3 +40,39 @@ Console.WriteLine(saveCapitalName);
 // Lower case method
 string saveLowerCaseName = name.ToLower();
 Console.WriteLine(saveLowerCaseName);
+
+// Contains method
+// Returns true if substring is 
+string theZoneLyrics = "I don't want to die tonight babe. So let me sip this slow";
+Console.WriteLine(theZoneLyrics.Contains("touch you right")); // False
+Console.WriteLine(theZoneLyrics.Contains("let me")); // True
+
+string lyrics = "All alone she was living in a world without an end or beginning";
+string substring = "in a world";
+Console.WriteLine(lyrics.Contains(substring));
+
+string futureSong = "Tony Montana, Tony Montana, Tony Montana";
+string searchString = "Tony Montana";
+Console.WriteLine(futureSong.Contains(searchString));
+
+if (futureSong.Contains(searchString)) {
+    Console.WriteLine($"{searchString} is inside {futureSong}");
+} else {
+    Console.WriteLine($"{searchString} is NOT inside {futureSong}");
+}
+
+// StartsWith() method
+// Returns true if the substring starts at the beggining of the variable
+string starboy = "I'm trying to put you in the worst mood. P1 cleaner than your church shoes";
+
+Console.WriteLine(starboy.StartsWith("I'm"));
+// EndsWith() method
+// Return true if the substrings is at the end of the variable
+Console.WriteLine(starboy.EndsWith("shoes"));
+
+// Challenge
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.StartsWith("You")); // Correct
+Console.WriteLine(songLyrics.StartsWith("goodbye")); // Correct
+Console.WriteLine(songLyrics.EndsWith("hello")); // Correct
+Console.WriteLine(songLyrics.EndsWith("goodbye")); // Correct

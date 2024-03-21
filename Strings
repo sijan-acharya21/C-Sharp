@@ -11,19 +11,32 @@ string bank = "St.George";
 double bankBalance = 5.10;
 Console.Write($"{accountOwner} has ${bankBalance} in their {bank} account");
 
-
+// TrimStart() method
 // Square brackets are used to help visualize the spaces in Trim method
 string name = "        Minecraft       ";
 string trimmedNameFront = name.TrimStart();
-
 Console.WriteLine($"[{trimmedNameFront}]"); // [Minecraft       ]
 
+// TrimEnd() method
 string sport = "        Boxing      ";
 string trimmedNameBack = sport.TrimEnd();
-
 Console.WriteLine($"[{trimmedNameBack}]"); // [        Boxing]
 
+// Trim() method
 string company = "      Blackrock       ";
 string companyTrimmed = company.Trim();
-
 Console.WriteLine($"[{companyTrimmed}]"); // [Blackrock]
+
+// Replace method
+string name = "Lamar Jackson";
+Console.WriteLine($"Current name is {name}");
+name = name.Replace("Jackson","Taylor");
+Console.WriteLine($"Current name is {name}");
+
+// Upper case method
+string saveCapitalName = name.ToUpper();
+Console.WriteLine(saveCapitalName);
+
+// Lower case method
+string saveLowerCaseName = name.ToLower();
+Console.WriteLine(saveLowerCaseName);

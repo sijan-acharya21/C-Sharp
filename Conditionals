@@ -1,0 +1,36 @@
+
+namespace Operators
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        // If / Then statement
+            string recordLabel = "XO";
+        if (recordLabel == "XO")
+            {
+                Console.WriteLine($"The record label is called {recordLabel}");
+            }
+
+        // If - Then - Else statement
+        if (recordLabel == "XO")
+            {
+                Console.WriteLine($"The record label is called {recordLabel}");
+            } else
+            {
+                Console.WriteLine($"The record label is NOT XO");
+            }
+
+            // If - Else - Else-if statement
+
+            int income = 1700;
+
+        if (income  1700) { 
+                Console.WriteLine("Income is lower than expected");
+        } else if (income ) 
+
+         
+
+        }
+    }
+}

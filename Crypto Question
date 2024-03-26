@@ -1,0 +1,12 @@
+// If a coin is worth $1 and increases 1 percent every day
+
+double coinPrice = 1;
+double percentageIncrease = 0.01;
+int timeLength = 366;
+double newPrice;
+
+for (int i = 1; i <= timeLength; i++)
+{
+    coinPrice += (coinPrice * percentageIncrease);
+    Console.WriteLine(coinPrice);
+}

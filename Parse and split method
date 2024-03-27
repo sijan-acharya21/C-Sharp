@@ -1,0 +1,15 @@
+  // Process an array of decimal values rounding them to integers before outputting to console
+    decimal[] values = new decimal[] { 1.115m, 2.225m, 3.335m, 4.445m };
+    string stringValues = string.Join(", ", values);
+    Console.WriteLine(stringValues);
+
+  // Split method
+  string lyrics = "Let me get in my zone";
+  string[] words = lyrics.Split(' ');
+  Console.WriteLine(words);
+
+  string[] storeInArray = { };
+  Console.WriteLine(string.Join(", ", words));
+
+  string[] brands = { "Nike", "Adidas", "Puma" };
+  Console.WriteLine(string.Join(", ",brands));

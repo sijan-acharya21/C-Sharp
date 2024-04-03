@@ -1,0 +1,18 @@
+// Write a program that computes and applies a price discount. The discount is only offered if a customer purchases no more than five items and the total price exceeds $500.
+// The discount offered to qualifying purchases is 20%.
+
+// Any Console.ReadLine() is turned to a string
+
+Console.WriteLine("How many items did you buy?");
+int items = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("How much does everything cost?");
+double totalPrice = Convert.ToDouble(Console.ReadLine());
+if (items <= 5 && totalPrice > 500)
+{
+    double discount = 0.20 * totalPrice;
+    double finalPrice = totalPrice - discount;
+    Console.WriteLine($"Your total price is ${finalPrice} and you received a discount of ${discount}");
+} else
+{
+    Console.WriteLine($"Not eligible for discount because\n1. Items is more than 5 \n2. Price did not exceed 500");
+}

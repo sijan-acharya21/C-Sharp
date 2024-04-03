@@ -1,0 +1,36 @@
+// Compound assignment operators
+// Note - Console output does not actually change the current state of the variable
+int y = 5;
+Console.WriteLine(y = y + 10); // 15
+Console.WriteLine(y += 10); // 25
+
+
+// z++ returns the value before the increment
+int z = 0;
+Console.WriteLine(z); // 0
+Console.WriteLine(z++); // 0 because it returns the value before the increment
+Console.WriteLine(z); // 1
+
+
+int x = 44;
+Console.WriteLine(x); // 44 
+Console.WriteLine(x++); // 44
+Console.WriteLine(x); // 45
+
+// Comparison operators are used to compare two values and return a boolean
+int num1 = 7;
+int num2 = 5;
+if (num1 > num2)
+{
+    Console.WriteLine($"{num1} is greater than {num2}");
+}
+
+string password = "sijan";
+string input = Console.ReadLine();
+if (input == password)
+{
+    Console.WriteLine("Logged in");
+} else
+{
+    Console.WriteLine($"{input} is not the same as password");
+}
